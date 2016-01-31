@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WebSite.Models.Test>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4">
+            <h2>View library for working with grid</h2>
+
+            <div class="mvc-grid-row">
+
+
+                @(Html
+                      .Grid(Model)
+                      .Build(columns =>
+                      {
+                          columns.Add(model => model.Id).Titled("Id");
+                          columns.Add(model => model.Name).Titled("Name");
+                          columns.Add(model => model.Guid).Titled("Guid");
+                      })
+                      .Filterable()
+                      .Sortable().Css("col-lg-4")
+                      )
+            </div>
+        </div>
+    </div>
+</div>

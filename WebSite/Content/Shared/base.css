@@ -1,0 +1,18 @@
+﻿* {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+body {
+    font-family: "PT Sans", consolas;
+    color: #555555;
+    background-image: url(../../Images/content-background.jpg);
+    background-color: #f2f2f2;
+}
+
+
+.footer {
+    text-align: center;
+    padding-top: 20px;
+    color: #cccccc;
+}
